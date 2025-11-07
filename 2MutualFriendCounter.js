@@ -49,18 +49,18 @@ const getMutualFriendCountVeryFast = (personA, personB) => {
   const start = performance.now();
 
 //   1lakh
-//   const idListA = new Set(personA.map(friend => friend.id));
-//   const mutualFriend = [];
-//   userB.forEach(friendB => {
-//       if(idListA.has(friendB.id)){
-//           mutualFriend.push(friendB);
-//       }
-//   });
+  const idListA = new Set(personA.map(friend => friend.id));
+  const mutualFriend = [];
+  userB.forEach(friendB => {
+      if(idListA.has(friendB.id)){
+          mutualFriend.push(friendB);
+      }
+  });
 
 
 //   1lakh
-  const idListA = new Set(personA.map((friend) => friend.id));
-  const mutualFriend = personB.filter(friendB => idListA.has(friendB.id));
+//   const idListA = new Set(personA.map((friend) => friend.id));
+//   const mutualFriend = personB.filter(friendB => idListA.has(friendB.id));
 
 
 //   2.5lakh
