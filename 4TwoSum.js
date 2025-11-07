@@ -23,3 +23,4 @@ const twoSum = (nums, target) => {
 const nums = [2, 11, 7, 15];
 const target = 9;
 console.log(twoSum(nums, target));
+console.log(twoSum(nums, 12));
